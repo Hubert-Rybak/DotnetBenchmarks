@@ -4,7 +4,6 @@ This project was inspired by my collegue which stated that:
 <br>
 > *"Creation of __`List<T>`__ is expensive, use __`Collection<T>`__ instead."*  
 
-<br>
 So I decided to put it into test with excellent **BenchmarkDotNet** library.
 
 ## Benchamrk results
