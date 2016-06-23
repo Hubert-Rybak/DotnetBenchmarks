@@ -18,7 +18,7 @@ Results:
 
 * **Initialization**
   
- Type=Initialize  Mode=Throughput  
+Mode=Throughput  
 
                Method |     Median |    StdDev |    Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
 --------------------- |----------- |---------- |--------- |------ |------ |------------------- |
@@ -27,7 +27,7 @@ Results:
 
 * **Add elements**  
 
-Type=AddElements  Mode=SingleRun  
+Mode=SingleRun (other - Out of Memory)
 
             Method |        Median |    StdDev |           Max | Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
 ------------------ |-------------- |---------- |-------------- |------ |------ |------ |------------------- |
@@ -36,7 +36,7 @@ Type=AddElements  Mode=SingleRun
 	   
 * **Find elements**  
 
-Type=FindElements  Mode=Throughput  
+Mode=Throughput  
 
            Method |      Median |    StdDev | Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
 ----------------- |------------ |---------- |------ |------ |------ |------------------- |
