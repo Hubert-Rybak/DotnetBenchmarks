@@ -6,8 +6,8 @@ This project was inspired by my collegue which stated that:
 
 So I decided to put it into test with excellent **BenchmarkDotNet** library.
 <br><br>
-* [List<T> vs Collection<T>](WhichShouldYouUse/Benchmarks/ListVsCollection/Results.md)  
-*  [method group vs lambda in loop](WhichShouldYouUse/Benchmarks/MethodGroupVsLambda/Results.md)
+* [List\<T\> vs Collection\<T\>](WhichShouldYouUse/Benchmarks/ListVsCollection/Results.md)  
+* [Method group vs Lambda in loop](WhichShouldYouUse/Benchmarks/MethodGroupVsLambda/Results.md)
 
 #####WIP:
 * Custom "ToString()" for each `Enum` member: Custom Attribute vs `EnumMemberAttribute` vs Extension method.  
