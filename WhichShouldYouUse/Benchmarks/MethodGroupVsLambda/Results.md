@@ -10,16 +10,16 @@ JitModules=clrjit-v4.6.1080.0
 Type=MethodGroupVsLambdaInLoop  Mode=Throughput  
 
 ```
+
             Method |     Median |    StdDev |    Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
 ------------------ |----------- |---------- |--------- |------ |------ |------------------- |
  MethodGroupInLoop | 36.9511 ns | 0.3677 ns | 7,358.00 |     - |     - |              76.97 |
-      LambdaInLoop | 18.9907 ns | 0.4875 ns |        - |     - |     - |               0.00 |
-	  
-	  
-	  
->The Method group version allocates a new object every single time it is run whereas the lambda version uses an instance (or static, as >necessary) field to cache the delegate.  
->More info:  
+      LambdaInLoop | 18.9907 ns | 0.4875 ns |        - |     - |     - |               0.00 |    
 
->http://vibrantcode.com/2013/02/19/lambdas-vs-method-groups/  
->http://blog.filipekberg.se/2013/02/15/optimize-your-delegate-usage/
+<br>
+The Method group version allocates a new object every single time it is run whereas the lambda version uses an instance (or static, as necessary) field to cache the delegate.  
+More info:  
+
+http://vibrantcode.com/2013/02/19/lambdas-vs-method-groups/  
+http://blog.filipekberg.se/2013/02/15/optimize-your-delegate-usage/
 
