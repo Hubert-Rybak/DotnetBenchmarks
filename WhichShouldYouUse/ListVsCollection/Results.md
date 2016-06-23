@@ -27,7 +27,8 @@ Results:
 
 * **Add elements**  
 
-Type=AddElements  Mode=SingleRun
+Type=AddElements  Mode=SingleRun  
+
             Method |        Median |    StdDev |           Max | Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
 ------------------ |-------------- |---------- |-------------- |------ |------ |------ |------------------- |
  TestAddCollection | 1,463.7100 ns | 0.0000 ns | 1,463.7100 ns |     - |     - |     - |         179,018.67 |
