@@ -13,7 +13,10 @@ namespace WhichYouShouldUse
     {
         static void Main(string[] args)
         {
-            var summary = BenchmarkRunner.Run<ListVsCollection>();
+            BenchmarkRunner.Run<Initialize>();
+            BenchmarkRunner.Run<AddElements>();
+            BenchmarkRunner.Run<FindElements>();
+
             Console.ReadKey();
         }
     }
