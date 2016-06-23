@@ -2,7 +2,7 @@
 # Which should you use?
 This project was inspired by my collegue which stated that:
 <br>
-> *"Creation of `List<T>` is expensive, you should __ALWAYS__ use `Collection<T>`"*  
+> *"Creation of __`List<T>`__ is expensive, use __`Collection<T>`__ instead."*  
 
 So I decided to put it into test with excellent **BenchmarkDotNet** library.
 <br><br>
