@@ -17,9 +17,9 @@ Type=MethodGroupVsLambdaInLoop  Mode=Throughput
 	  
 	  
 	  
-The Method Group version allocates a new object every single time it is run whereas the lambda version uses an instance (or static, as necessary) field to cache the delegate.
-More info:
+>The Method group version allocates a new object every single time it is run whereas the lambda version uses an instance (or static, as >necessary) field to cache the delegate.  
+>More info:  
 
-http://vibrantcode.com/2013/02/19/lambdas-vs-method-groups/
-http://blog.filipekberg.se/2013/02/15/optimize-your-delegate-usage/
+>http://vibrantcode.com/2013/02/19/lambdas-vs-method-groups/  
+>http://blog.filipekberg.se/2013/02/15/optimize-your-delegate-usage/
 
