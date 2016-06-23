@@ -1,5 +1,7 @@
 ﻿using System;
 using BenchmarkDotNet.Running;
+using WhichShouldYouUse.Benchmarks;
+using WhichShouldYouUse.Benchmarks.MethodGroupVsLambda;
 
 namespace WhichShouldYouUse
 {
@@ -7,9 +9,14 @@ namespace WhichShouldYouUse
     {
         static void Main(string[] args)
         {
-            BenchmarkRunner.Run<Initialize>();
-            BenchmarkRunner.Run<AddElements>();
-            BenchmarkRunner.Run<FindElements>();
+
+            //List<T> vs Collection<T>
+            //BenchmarkRunner.Run<Initialize>();
+            //BenchmarkRunner.Run<AddElements>();
+            //BenchmarkRunner.Run<FindElements>();
+
+            //Method group vs lambda in loop
+            BenchmarkRunner.Run<MethodGroupVsLambdaInLoop>();
 
             //Console.ReadKey();
         }

@@ -58,20 +58,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Benchmarks\MethodGroupVsLambda\MethodGroupVsLambdaInLoop.cs" />
     <Compile Include="Configs\ConfigurationBase.cs" />
     <Compile Include="DataSeeder.cs" />
-    <Compile Include="ListVsCollection\AddElements.cs" />
-    <Compile Include="ListVsCollection\FindElements.cs" />
-    <Compile Include="ListVsCollection\Initialize.cs" />
-    <Compile Include="ListVsCollection\ListVsCollection.cs" />
+    <Compile Include="Benchmarks\ListVsCollection\AddElements.cs" />
+    <Compile Include="Benchmarks\ListVsCollection\FindElements.cs" />
+    <Compile Include="Benchmarks\ListVsCollection\Initialize.cs" />
     <Compile Include="Models\ComplexObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Benchmarks\ListVsCollection\Results.md" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.41\build\Microsoft.Diagnostics.Tracing.TraceEvent.targets" Condition="Exists('..\packages\Microsoft.Diagnostics.Tracing.TraceEvent.1.0.41\build\Microsoft.Diagnostics.Tracing.TraceEvent.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

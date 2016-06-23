@@ -6,9 +6,9 @@ using BenchmarkDotNet.Attributes;
 using WhichShouldYouUse.Configs;
 using WhichShouldYouUse.Models;
 
-namespace WhichShouldYouUse
+namespace WhichShouldYouUse.Benchmarks
 {
-    [Config(typeof(MemoryAllocationConfig))]
+    [Config(typeof(DefaultJobWithMemoryAllocation))]
     public class FindElements : ConfigurationBase
     {
         private readonly Collection<ComplexObject> collection;

@@ -7,9 +7,9 @@ namespace WhichShouldYouUse.Configs
 {
     public class ConfigurationBase
     {
-        protected class MemoryAllocationConfig : ManualConfig
+        protected class DefaultJobWithMemoryAllocation : ManualConfig
         {
-            public MemoryAllocationConfig()
+            public DefaultJobWithMemoryAllocation()
             {
                 Add(new MemoryDiagnoser());
                 Add(Job.Default);
