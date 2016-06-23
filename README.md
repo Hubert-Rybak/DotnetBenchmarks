@@ -10,4 +10,5 @@ So I decided to put it into test with excellent **BenchmarkDotNet** library.
 WIP:
 * Method group vs lambda (as on http://vibrantcode.com/2013/02/19/lambdas-vs-method-groups/)  
 
+<br>
 >  *"Premature optimization is the root of all evil"* -- Donald Knuth 
