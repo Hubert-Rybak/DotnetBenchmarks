@@ -18,13 +18,16 @@ Results:
 
 * **Initialization**
   
-               Method |    Median |    StdDev |       Max | Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
---------------------- |---------- |---------- |---------- |------ |------ |------ |------------------- |
- InitializeCollection | 1.7565 us | 0.0000 us | 1.7565 us |     - |     - |     - |         142,756.00 |
-       InitializeList | 2.3419 us | 0.0000 us | 2.3419 us |     - |     - |     - |         142,972.00 |
+ Type=Initialize  Mode=Throughput  
+
+               Method |     Median |    StdDev |    Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
+--------------------- |----------- |---------- |--------- |------ |------ |------------------- |
+ InitializeCollection | 12.8557 ns | 0.2601 ns | 3,020.00 |     - |     - |              16.94 |
+       InitializeList |  8.7589 ns | 0.2665 ns | 1,757.56 |     - |     - |               9.85 |
 
 * **Add elements**  
 
+Type=AddElements  Mode=SingleRun
             Method |        Median |    StdDev |           Max | Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
 ------------------ |-------------- |---------- |-------------- |------ |------ |------ |------------------- |
  TestAddCollection | 1,463.7100 ns | 0.0000 ns | 1,463.7100 ns |     - |     - |     - |         179,018.67 |
@@ -32,9 +35,11 @@ Results:
 	   
 * **Find elements**  
 
-           Method |    Median |    StdDev | Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
------------------ |---------- |---------- |------ |------ |------ |------------------- |
- FindOnCollection | 9.6605 us | 0.0000 us |     - |     - |     - |         181,741.33 |
-       FindOnList | 5.8548 us | 0.0000 us |     - |     - |     - |         181,752.00 |
+Type=FindElements  Mode=Throughput  
+
+           Method |      Median |    StdDev | Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
+----------------- |------------ |---------- |------ |------ |------ |------------------- |
+ FindOnCollection | 868.3073 ns | 2.2616 ns | 95.91 |     - |     - |              37.68 |
+       FindOnList | 768.8471 ns | 5.7764 ns | 67.00 |     - |     - |              23.85 |
 
 

@@ -12,7 +12,7 @@ namespace WhichShouldYouUse.Configs
             public MemoryAllocationConfig()
             {
                 Add(new MemoryDiagnoser());
-                Add(Job.Dry);
+                Add(Job.Default);
                 //Add(Job.AllJits);
             }
         }

@@ -11,7 +11,7 @@ namespace WhichShouldYouUse
             BenchmarkRunner.Run<AddElements>();
             BenchmarkRunner.Run<FindElements>();
 
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }
