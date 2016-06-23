@@ -6,7 +6,7 @@ This project was inspired by my collegue which stated that:
 
 So I decided to put it into test with excellent **BenchmarkDotNet** library.
 <br><br>
-* [List<T> vs Collection<T>](WhichYouShouldUse/ListVsCollection/Results.md)  
+* [List<T> vs Collection<T>](WhichShouldYouUse/ListVsCollection/Results.md)  
 
 #####WIP:
 * Method group vs lambda (as on http://vibrantcode.com/2013/02/19/lambdas-vs-method-groups/)  
