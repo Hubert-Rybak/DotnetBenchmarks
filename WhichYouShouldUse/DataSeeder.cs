@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
+using WhichShouldYouUse.Models;
 
-using WhichYouShouldUse.Models;
-
-namespace WhichYouShouldUse
+namespace WhichShouldYouUse
 {
     public class DataSeeder
     {

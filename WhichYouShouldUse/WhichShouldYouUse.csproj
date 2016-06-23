@@ -7,8 +7,8 @@
     <ProjectGuid>{9396E137-5752-4BC0-8AF6-036499F9289E}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>WhichYouShouldUse</RootNamespace>
-    <AssemblyName>WhichYouShouldUse</AssemblyName>
+    <RootNamespace>WhichShouldYouUse</RootNamespace>
+    <AssemblyName>WhichShouldYouUse</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -58,7 +58,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Configs\MemoryAllocationConfig.cs" />
+    <Compile Include="Configs\ConfigurationBase.cs" />
+    <Compile Include="DataSeeder.cs" />
+    <Compile Include="ListVsCollection\AddElements.cs" />
+    <Compile Include="ListVsCollection\FindElements.cs" />
+    <Compile Include="ListVsCollection\Initialize.cs" />
     <Compile Include="ListVsCollection\ListVsCollection.cs" />
     <Compile Include="Models\ComplexObject.cs" />
     <Compile Include="Program.cs" />

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WhichYouShouldUse.Models
+namespace WhichShouldYouUse.Models
 {
     public class ComplexObject
     {

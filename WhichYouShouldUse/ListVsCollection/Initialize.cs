@@ -1,12 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
-
 using BenchmarkDotNet.Attributes;
+using WhichShouldYouUse.Configs;
+using WhichShouldYouUse.Models;
 
-using WhichYouShouldUse.Configs;
-using WhichYouShouldUse.Models;
-
-namespace WhichYouShouldUse
+namespace WhichShouldYouUse
 {
     [Config(typeof(MemoryAllocationConfig))]
     public class Initialize : ConfigurationBase
