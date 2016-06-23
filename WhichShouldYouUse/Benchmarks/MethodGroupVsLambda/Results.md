@@ -4,7 +4,7 @@ BenchmarkDotNet=v0.9.7.0
 OS=Microsoft Windows NT 6.2.9200.0
 Processor=Intel(R) Core(TM) i7-4770K CPU 3.50GHz, ProcessorCount=8
 Frequency=3415988 ticks, Resolution=292.7411 ns, Timer=TSC
-HostCLR=MS.NET 4.0.30319.42000, Arch=32-bit RELEASE [AttachedDebugger]
+HostCLR=MS.NET 4.0.30319.42000, Arch=32-bit RELEASE
 JitModules=clrjit-v4.6.1080.0
 
 Type=MethodGroupVsLambdaInLoop  Mode=Throughput  
