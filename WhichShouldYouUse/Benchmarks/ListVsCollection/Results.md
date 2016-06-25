@@ -27,7 +27,7 @@ Mode=Throughput
 
 * **Add elements**  
 
-Type=AddAndRemoveElements  Mode=Throughput  
+Mode=Throughput  
 
                      Method |      Median |    StdDev | Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
 --------------------------- |------------ |---------- |------ |------ |------ |------------------- |
