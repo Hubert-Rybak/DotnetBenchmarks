@@ -27,13 +27,13 @@ Mode=Throughput
 
 * **Add elements**  
 
-Mode=SingleRun (other - Out of Memory)
+Type=AddAndRemoveElements  Mode=Throughput  
 
-            Method |        Median |    StdDev |           Max | Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
------------------- |-------------- |---------- |-------------- |------ |------ |------ |------------------- |
- TestAddCollection | 1,463.7100 ns | 0.0000 ns | 1,463.7100 ns |     - |     - |     - |         179,018.67 |
-       TestAddList |   878.2200 ns | 0.0000 ns |   878.2200 ns |     - |     - |     - |         179,018.67 |
-	   
+                     Method |      Median |    StdDev | Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
+--------------------------- |------------ |---------- |------ |------ |------ |------------------- |
+ AddAndRemoveFromCollection | 366.9311 ns | 4.2355 ns |     - |     - |     - |               0.03 |
+       AddAndRemoveFromList | 219.1629 ns | 3.7055 ns |     - |     - |     - |               0.03 |
+
 * **Find elements**  
 
 Mode=Throughput  

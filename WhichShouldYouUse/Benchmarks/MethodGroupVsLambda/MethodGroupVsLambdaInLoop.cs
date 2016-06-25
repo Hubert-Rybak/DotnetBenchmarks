@@ -8,12 +8,12 @@ namespace WhichShouldYouUse.Benchmarks.MethodGroupVsLambda
     [Config(typeof(DefaultJobWithMemoryAllocation))]
     public class MethodGroupVsLambdaInLoop : ConfigurationBase
     {
-        private int maxCalls= 5;
+        private int _maxCalls= 5;
 
         [Benchmark]
         public void MethodGroupInLoop()
         {
-            for (int i = 0; i < maxCalls; i++)
+            for (int i = 0; i < _maxCalls; i++)
             {
                 Call(Dump);
             }
@@ -22,7 +22,7 @@ namespace WhichShouldYouUse.Benchmarks.MethodGroupVsLambda
         [Benchmark]
         public void LambdaInLoop()
         {
-            for (int i = 0; i < maxCalls; i++)
+            for (int i = 0; i < _maxCalls; i++)
             {
                 Call(s => Dump(s));
             }

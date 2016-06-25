@@ -61,7 +61,7 @@
     <Compile Include="Benchmarks\MethodGroupVsLambda\MethodGroupVsLambdaInLoop.cs" />
     <Compile Include="Configs\ConfigurationBase.cs" />
     <Compile Include="DataSeeder.cs" />
-    <Compile Include="Benchmarks\ListVsCollection\AddElements.cs" />
+    <Compile Include="Benchmarks\ListVsCollection\AddAndRemoveElements.cs" />
     <Compile Include="Benchmarks\ListVsCollection\FindElements.cs" />
     <Compile Include="Benchmarks\ListVsCollection\Initialize.cs" />
     <Compile Include="Models\ComplexObject.cs" />

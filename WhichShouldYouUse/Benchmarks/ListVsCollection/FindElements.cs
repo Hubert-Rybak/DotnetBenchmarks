@@ -11,26 +11,26 @@ namespace WhichShouldYouUse.Benchmarks
     [Config(typeof(DefaultJobWithMemoryAllocation))]
     public class FindElements : ConfigurationBase
     {
-        private readonly Collection<ComplexObject> collection;
+        private readonly Collection<ComplexObject> _collection;
 
-        private readonly List<ComplexObject> list;
+        private readonly List<ComplexObject> _list;
 
         public FindElements()
         {
-            this.collection = new Collection<ComplexObject>(DataSeeder.GetManyComplexObjects());
-            this.list = new List<ComplexObject>(DataSeeder.GetManyComplexObjects());
+            this._collection = new Collection<ComplexObject>(DataSeeder.GetManyComplexObjects());
+            this._list = new List<ComplexObject>(DataSeeder.GetManyComplexObjects());
         }
 
         [Benchmark]
         public ComplexObject FindOnCollection()
         {
-            return this.collection.SingleOrDefault(BenchmarkPredicate);
+            return this._collection.SingleOrDefault(BenchmarkPredicate);
         }
 
         [Benchmark]
         public ComplexObject FindOnList()
         {
-            return this.list.Find(BenchmarkPredicate);
+            return this._list.Find(BenchmarkPredicate);
         }
 
         private bool BenchmarkPredicate(ComplexObject complexObject)

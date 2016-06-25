@@ -12,13 +12,13 @@ namespace WhichShouldYouUse
 
             //List<T> vs Collection<T>
             //BenchmarkRunner.Run<Initialize>();
-            //BenchmarkRunner.Run<AddElements>();
+            BenchmarkRunner.Run<AddAndRemoveElements>();
             //BenchmarkRunner.Run<FindElements>();
 
             //Method group vs lambda in loop
-            BenchmarkRunner.Run<MethodGroupVsLambdaInLoop>();
+            //BenchmarkRunner.Run<MethodGroupVsLambdaInLoop>();
 
-            //Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }
