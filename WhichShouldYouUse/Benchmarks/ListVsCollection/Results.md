@@ -11,14 +11,14 @@ HostCLR=MS.NET 4.0.30319.42000, Arch=32-bit RELEASE
 JitModules=clrjit-v4.6.1080.0
 
 ```
+Mode=Throughput  
 
 ## List vs Collection
 
 Results:
 
 * **Initialization**
-  
-Mode=Throughput  
+
 
                Method |     Median |    StdDev |    Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
 --------------------- |----------- |---------- |--------- |------ |------ |------------------- |
@@ -27,7 +27,6 @@ Mode=Throughput
 
 * **Add elements**  
 
-Mode=Throughput  
 
                      Method |      Median |    StdDev | Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
 --------------------------- |------------ |---------- |------ |------ |------ |------------------- |
@@ -36,7 +35,6 @@ Mode=Throughput
 
 * **Find elements**  
 
-Mode=Throughput  
 
            Method |      Median |    StdDev | Gen 0 | Gen 1 | Gen 2 | Bytes Allocated/Op |
 ----------------- |------------ |---------- |------ |------ |------ |------------------- |
