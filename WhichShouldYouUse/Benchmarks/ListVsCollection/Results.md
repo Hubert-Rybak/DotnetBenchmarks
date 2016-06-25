@@ -42,3 +42,5 @@ Results:
        FindOnList | 768.8471 ns | 5.7764 ns | 67.00 |     - |     - |              23.85 |
 
 
+
+Results show that Collection is not better from List in any way. In fact it is a bit slower due to fact that most of its methods are virtual. Moreover, Collection doesn't support many operations "out of the box" like List e.g. Find(), RemoveAll(Perdicate) and  so on.   Main point of Collection is to use it as base class for custom collection implementations.
