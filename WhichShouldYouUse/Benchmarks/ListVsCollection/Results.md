@@ -41,4 +41,5 @@ Mode=Throughput
 
 
 
-Results show that Collection is not better from List in any way. In fact it is a bit slower due to fact that most of its methods are virtual. Moreover, Collection doesn't support many operations "out of the box" like List e.g. Find(), RemoveAll(Perdicate) and  so on.   Main point of Collection is to use it as base class for custom collection implementations.
+Results show that Collection is not better from List in any way. In fact, it is a bit slower due to that most of its methods are virtual.  
+Moreover, Collection doesn't support many operations "out of the box" like List e.g. Find(). Main point of using Collection is to use it as a base class for custom collection implementations.
