@@ -50,6 +50,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -58,6 +59,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Benchmarks\Enums\EnumBenchmark.cs" />
+    <Compile Include="Benchmarks\Enums\EnumToString\AttributeBased.cs" />
+    <Compile Include="Benchmarks\Enums\EnumToString\AttributeCache.cs" />
+    <Compile Include="Benchmarks\Enums\EnumToString\DictionaryBased.cs" />
+    <Compile Include="Benchmarks\Enums\TestEnumWithAttributes.cs" />
+    <Compile Include="Benchmarks\Enums\TestEnumWithoutAttributes.cs" />
     <Compile Include="Benchmarks\MethodGroupVsLambda\MethodGroupVsLambdaInLoop.cs" />
     <Compile Include="Configs\ConfigurationBase.cs" />
     <Compile Include="DataSeeder.cs" />
@@ -70,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Benchmarks\Enums\Results.md" />
     <None Include="Benchmarks\ListVsCollection\Results.md" />
     <None Include="packages.config" />
   </ItemGroup>

@@ -9,10 +9,7 @@ So I decided to put it into test with excellent **BenchmarkDotNet** library.
 ## Benchamrk results
 * [List\<T\> vs Collection\<T\>](WhichShouldYouUse/Benchmarks/ListVsCollection/Results.md)  
 * [Method group vs Lambda in loop](WhichShouldYouUse/Benchmarks/MethodGroupVsLambda/Results.md)
-
-#####WIP:
-* Custom "ToString()" for each `Enum` member: Custom Attribute vs `EnumMemberAttribute` vs Extension method.  
-All with Enum <-> String conversion.
+* [Enum ToString() with custom values](WhichShouldYouUse/Benchmarks/Enums/Results.md)
 
 <br>
 >  *"Premature optimization is the root of all evil"* -- Donald Knuth 

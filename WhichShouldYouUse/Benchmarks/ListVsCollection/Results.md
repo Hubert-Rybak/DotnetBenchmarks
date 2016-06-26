@@ -15,8 +15,6 @@ Mode=Throughput
 
 ## List vs Collection
 
-Results:
-
 * **Initialization**
 
 
