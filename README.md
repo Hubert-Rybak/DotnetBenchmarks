@@ -9,7 +9,7 @@ So I decided to put it into test with excellent **BenchmarkDotNet** library.
 ## Benchamrk results
 * [List\<T\> vs Collection\<T\>](WhichShouldYouUse/Benchmarks/ListVsCollection/Results.md)  
 * [Method group vs Lambda in loop](WhichShouldYouUse/Benchmarks/MethodGroupVsLambda/Results.md)
-* [Enum ToString() with custom values](WhichShouldYouUse/Benchmarks/Enums/Results.md)
+* [Enum ToString() with custom values](WhichShouldYouUse/Benchmarks/Enums/EnumToString/Results.md)
 
 <br>
 >  *"Premature optimization is the root of all evil"* -- Donald Knuth 

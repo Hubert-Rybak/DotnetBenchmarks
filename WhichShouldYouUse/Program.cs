@@ -1,28 +1,27 @@
 ﻿using System;
 using BenchmarkDotNet.Running;
 using WhichShouldYouUse.Benchmarks;
-using WhichShouldYouUse.Benchmarks.Enums;
 using WhichShouldYouUse.Benchmarks.Enums.EnumToString;
+using WhichShouldYouUse.Benchmarks.Enums.ObjectEnumVsRegular;
 using WhichShouldYouUse.Benchmarks.MethodGroupVsLambda;
 
 namespace WhichShouldYouUse
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-
             //List<T> vs Collection<T>
-            //BenchmarkRunner.Run<Initialize>();
-            //BenchmarkRunner.Run<AddAndRemoveElements>();
-            //BenchmarkRunner.Run<FindElements>();
+            //BenchmarkRunner.Run<BenchmarkListVsCollectionInitialize>();
+            //BenchmarkRunner.Run<BenchmarkListVsCollectionAddAndRemoveElements>();
+            //BenchmarkRunner.Run<BenchmarkListVsCollectionFindElements>();
 
             //Method group vs lambda in loop
-            //BenchmarkRunner.Run<MethodGroupVsLambdaInLoop>();
+            //BenchmarkRunner.Run<BenchmarkMehodGroupVsLambda>();
 
-            BenchmarkRunner.Run<EnumBenchmark>();
-
-            Console.ReadKey();
+            //Enums
+            //BenchmarkRunner.Run<EnumToStringBenchmark>();
+            BenchmarkRunner.Run<BenchmarkObjectEnumVsRegular>();
         }
     }
 }

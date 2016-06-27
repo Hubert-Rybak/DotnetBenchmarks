@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace WhichShouldYouUse.Benchmarks.Enums
+namespace WhichShouldYouUse.Benchmarks.Enums.EnumToString
 {
     public enum TestEnumWithAttributes
     {

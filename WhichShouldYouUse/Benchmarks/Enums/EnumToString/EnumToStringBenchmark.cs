@@ -1,11 +1,10 @@
 ﻿using BenchmarkDotNet.Attributes;
-using WhichShouldYouUse.Benchmarks.Enums.EnumToString;
 using WhichShouldYouUse.Configs;
 
-namespace WhichShouldYouUse.Benchmarks.Enums
+namespace WhichShouldYouUse.Benchmarks.Enums.EnumToString
 {
     [Config(typeof(DefaultJobWithMemoryAllocation))]
-    public class EnumBenchmark : ConfigurationBase
+    public class EnumToStringBenchmark : ConfigurationBase
     {
         [Benchmark]
         public TestEnumWithAttributes EnumToStringWithCustomAttribute()

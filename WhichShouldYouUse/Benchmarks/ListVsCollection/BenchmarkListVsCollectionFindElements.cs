@@ -9,13 +9,13 @@ using WhichShouldYouUse.Models;
 namespace WhichShouldYouUse.Benchmarks
 {
     [Config(typeof(DefaultJobWithMemoryAllocation))]
-    public class FindElements : ConfigurationBase
+    public class BenchmarkListVsCollectionFindElements : ConfigurationBase
     {
         private readonly Collection<ComplexObject> _collection;
 
         private readonly List<ComplexObject> _list;
 
-        public FindElements()
+        public BenchmarkListVsCollectionFindElements()
         {
             this._collection = new Collection<ComplexObject>(DataSeeder.GetManyComplexObjects());
             this._list = new List<ComplexObject>(DataSeeder.GetManyComplexObjects());

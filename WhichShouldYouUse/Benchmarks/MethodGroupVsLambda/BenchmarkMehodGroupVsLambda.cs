@@ -6,7 +6,7 @@ using WhichShouldYouUse.Configs;
 namespace WhichShouldYouUse.Benchmarks.MethodGroupVsLambda
 {
     [Config(typeof(DefaultJobWithMemoryAllocation))]
-    public class MethodGroupVsLambdaInLoop : ConfigurationBase
+    public class BenchmarkMehodGroupVsLambda : ConfigurationBase
     {
         private int _maxCalls= 5;
 

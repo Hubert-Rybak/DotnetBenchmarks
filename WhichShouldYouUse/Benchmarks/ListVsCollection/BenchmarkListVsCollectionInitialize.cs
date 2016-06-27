@@ -7,7 +7,7 @@ using WhichShouldYouUse.Models;
 namespace WhichShouldYouUse.Benchmarks
 {
     [Config(typeof(DefaultJobWithMemoryAllocation))]
-    public class Initialize : ConfigurationBase
+    public class BenchmarkListVsCollectionInitialize : ConfigurationBase
     {
         [Benchmark]
         public Collection<ComplexObject> InitializeCollection()

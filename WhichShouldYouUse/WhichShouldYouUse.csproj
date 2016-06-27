@@ -59,25 +59,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Benchmarks\Enums\EnumBenchmark.cs" />
+    <Compile Include="Benchmarks\Enums\EnumToString\EnumToStringBenchmark.cs" />
     <Compile Include="Benchmarks\Enums\EnumToString\AttributeBased.cs" />
     <Compile Include="Benchmarks\Enums\EnumToString\AttributeCache.cs" />
     <Compile Include="Benchmarks\Enums\EnumToString\DictionaryBased.cs" />
-    <Compile Include="Benchmarks\Enums\TestEnumWithAttributes.cs" />
-    <Compile Include="Benchmarks\Enums\TestEnumWithoutAttributes.cs" />
-    <Compile Include="Benchmarks\MethodGroupVsLambda\MethodGroupVsLambdaInLoop.cs" />
+    <Compile Include="Benchmarks\Enums\EnumToString\TestEnumWithAttributes.cs" />
+    <Compile Include="Benchmarks\Enums\EnumToString\TestEnumWithoutAttributes.cs" />
+    <Compile Include="Benchmarks\Enums\ObjectEnumVsRegular\BenchmarkObjectEnumVsRegular.cs" />
+    <Compile Include="Benchmarks\Enums\ObjectEnumVsRegular\ObjectEnum\ObjectEnum.cs" />
+    <Compile Include="Benchmarks\Enums\ObjectEnumVsRegular\Regular\Location.cs" />
+    <Compile Include="Benchmarks\Enums\ObjectEnumVsRegular\Regular\StreetTypes.cs" />
+    <Compile Include="Benchmarks\Enums\ObjectEnumVsRegular\ObjectEnum\StreetType.cs" />
+    <Compile Include="Benchmarks\Enums\ObjectEnumVsRegular\ObjectEnum\StreetTypeObject.cs" />
+    <Compile Include="Benchmarks\MethodGroupVsLambda\BenchmarkMehodGroupVsLambda.cs" />
     <Compile Include="Configs\ConfigurationBase.cs" />
     <Compile Include="DataSeeder.cs" />
-    <Compile Include="Benchmarks\ListVsCollection\AddAndRemoveElements.cs" />
-    <Compile Include="Benchmarks\ListVsCollection\FindElements.cs" />
-    <Compile Include="Benchmarks\ListVsCollection\Initialize.cs" />
+    <Compile Include="Benchmarks\ListVsCollection\BenchmarkListVsCollectionAddAndRemoveElements.cs" />
+    <Compile Include="Benchmarks\ListVsCollection\BenchmarkListVsCollectionFindElements.cs" />
+    <Compile Include="Benchmarks\ListVsCollection\BenchmarkListVsCollectionInitialize.cs" />
     <Compile Include="Models\ComplexObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Benchmarks\Enums\Results.md" />
+    <None Include="Benchmarks\Enums\EnumToString\Results.md" />
+    <None Include="Benchmarks\Enums\ObjectEnumVsRegular\Results.md" />
     <None Include="Benchmarks\ListVsCollection\Results.md" />
     <None Include="packages.config" />
   </ItemGroup>

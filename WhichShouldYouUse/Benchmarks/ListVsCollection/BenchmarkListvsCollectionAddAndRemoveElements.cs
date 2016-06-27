@@ -7,7 +7,7 @@ using WhichShouldYouUse.Models;
 namespace WhichShouldYouUse.Benchmarks
 {
     [Config(typeof(DefaultJobWithMemoryAllocation))]
-    public class AddAndRemoveElements : ConfigurationBase
+    public class BenchmarkListVsCollectionAddAndRemoveElements : ConfigurationBase
     {
         private readonly Collection<ComplexObject> _collection;
 
@@ -15,7 +15,7 @@ namespace WhichShouldYouUse.Benchmarks
 
         private readonly List<ComplexObject> _list;
 
-        public AddAndRemoveElements()
+        public BenchmarkListVsCollectionAddAndRemoveElements()
         {
             _collection = new Collection<ComplexObject>();
             _list = new List<ComplexObject>();
