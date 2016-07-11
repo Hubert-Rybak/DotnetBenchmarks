@@ -11,5 +11,8 @@ So I decided to put it into test with excellent **BenchmarkDotNet** library.
 * [Method group vs Lambda in loop](WhichShouldYouUse/Benchmarks/MethodGroupVsLambda/Results.md)
 * [Enum ToString() with custom values](WhichShouldYouUse/Benchmarks/Enums/EnumToString/Results.md)
 
+## TODO:
+* String.Replace vs String.Format
+* 
 <br>
 >  *"Premature optimization is the root of all evil"* -- Donald Knuth 
