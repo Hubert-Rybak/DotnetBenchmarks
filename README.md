@@ -13,6 +13,6 @@ So I decided to put it into test with excellent **BenchmarkDotNet** library.
 
 ## TODO:
 * String.Replace vs String.Format
-* 
+* Lock vs SpinLock
 <br>
 >  *"Premature optimization is the root of all evil"* -- Donald Knuth 
