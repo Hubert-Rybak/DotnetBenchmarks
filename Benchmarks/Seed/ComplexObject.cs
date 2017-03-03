@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-namespace WhichShouldYouUse.Models
+namespace DotnetBenchmarks.Seed
 {
     public class ComplexObject
     {

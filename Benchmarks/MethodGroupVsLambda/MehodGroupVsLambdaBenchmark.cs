@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+using System;
 using BenchmarkDotNet.Attributes;
-using WhichShouldYouUse.Configs;
 
-namespace WhichShouldYouUse.Benchmarks.MethodGroupVsLambda
+namespace DotnetBenchmarks.Benchmarks.MethodGroupVsLambda
 {
-    [Config(typeof(DefaultJobWithMemoryAllocation))]
-    public class BenchmarkMehodGroupVsLambda : ConfigurationBase
+    public class BenchmarkMehodGroupVsLambda
     {
         private int _maxCalls= 5;
 
@@ -15,7 +12,7 @@ namespace WhichShouldYouUse.Benchmarks.MethodGroupVsLambda
         {
             for (int i = 0; i < _maxCalls; i++)
             {
-                Call(Dump);
+                Call(EmptyFunction);
             }
         }
 
@@ -24,7 +21,7 @@ namespace WhichShouldYouUse.Benchmarks.MethodGroupVsLambda
         {
             for (int i = 0; i < _maxCalls; i++)
             {
-                Call(s => Dump(s));
+                Call(s => EmptyFunction(s));
             }
         }
 
@@ -33,7 +30,7 @@ namespace WhichShouldYouUse.Benchmarks.MethodGroupVsLambda
             act("Hi!");
         }
 
-        private static void Dump(string str)
+        private static void EmptyFunction(string str)
         {
 
         }

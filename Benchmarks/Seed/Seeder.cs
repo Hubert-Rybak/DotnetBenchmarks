@@ -1,8 +1,7 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using WhichShouldYouUse.Models;
 
-namespace WhichShouldYouUse
+namespace DotnetBenchmarks.Seed
 {
     public class DataSeeder
     {
