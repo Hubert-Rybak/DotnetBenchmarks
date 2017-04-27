@@ -4,8 +4,8 @@ This project contains several interesting benchmarks (made with [BenchmarkDotNet
 )).
 
 ## Benchamrks
-* [List\<T\> vs Collection\<T\>](WhichShouldYouUse/Benchmarks/ListVsCollection/Results.md)  
-* [Method group vs Lambda in loop](WhichShouldYouUse/Benchmarks/MethodGroupVsLambda/Results.md)
+* [List\<T\> vs Collection\<T\>](WhichShouldYouUse/Benchmarks/ListVsCollection)  
+* [Method group vs Lambda in loop](WhichShouldYouUse/Benchmarks/MethodGroupVsLambda)
 
 Comparing .NET Framework 4.6.2 vs dotnet core RC4
 
